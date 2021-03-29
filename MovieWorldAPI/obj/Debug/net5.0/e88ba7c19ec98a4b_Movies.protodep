@@ -1,0 +1,2 @@
+obj\Debug\net5.0/Movies.cs \
+obj\Debug\net5.0/MoviesGrpc.cs: ../CinemaWorldGrpcService/Movies.proto

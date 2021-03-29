@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using AutoMapper;
+using CinemaWorld.Models;
+using Grpc.Core;
+using MovieWorld.Grpc;
+namespace CinemaWorld
+{
+    public class CinemaWorldService : Movies.MoviesBase
+    {
+        private readonly IMapper _mapper;
+        public CinemaWorldService()
+        {
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<MovieDO, Movie>());
+            _mapper = new Mapper(config);
+        }
+        public override async Task<GetAllMoviesResponse> GetAll(GetAllMoviesRequest request, ServerCallContext serverCallContext)
+        {
+            var response = new GetAllMoviesResponse();
+            try
+            {
+                await using (var db = new MovieDOContext())
+                {
+                    var movie = db.Movies.Select(x => x).ToList();
+                    response.Movies.Add(_mapper.Map<List<Movie>>(movie));
+                }
+            }
+            catch(Exception ex)
+            {
+                string exception = ex.Message;
+            }
+            return response;
+        }
+
+        public override async Task<GetByMovieIdResponse> GetByMovieId(GetByMovieIdRequest request, ServerCallContext serverCallContext)
+        {
+            var response = new GetByMovieIdResponse();
+            await using (var db = new MovieDOContext())
+            {
+                var movie = db.Movies.Select(x => x).ToList();
+                response.Movie = _mapper.Map<Movie>(movie);
+            }
+            return response;
+        }
+    }
+}

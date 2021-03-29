@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "MovieWorld.Grpc";
+
+package API;
+
+service Movies {
+  rpc GetAll (GetAllMoviesRequest) returns (GetAllMoviesResponse);
+  rpc GetByMovieId (GetByMovieIdRequest) returns (GetByMovieIdResponse);
+}
+message GetAllMoviesRequest {}
+message GetAllMoviesResponse {
+  repeated Movie Movies = 1;
+}
+message GetByMovieIdRequest{
+	int32 MovieId = 1;
+}
+message GetByMovieIdResponse{
+	Movie Movie = 1;
+}
+message Movie{
+	int32 MovieId = 1;
+	string Title = 2;
+	double Price = 3;
+}

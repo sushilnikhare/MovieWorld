@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>061fd94b-c110-41ea-98cc-0fa8edd3f0c5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Movies.proto" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.36.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+	
+  <ItemGroup>
+    <Protobuf Include="Movies.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+</Project>

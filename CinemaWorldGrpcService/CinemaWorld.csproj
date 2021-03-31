@@ -20,6 +20,10 @@
   </ItemGroup>
 	
   <ItemGroup>
+    <ProjectReference Include="..\MovieDO\MovieDO.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
     <Protobuf Include="Movies.proto" GrpcServices="Server" />
   </ItemGroup>
 

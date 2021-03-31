@@ -1,0 +1,12 @@
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\bin\Debug\net5.0\MovieDO.deps.json
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\bin\Debug\net5.0\MovieDO.dll
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\bin\Debug\net5.0\ref\MovieDO.dll
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\bin\Debug\net5.0\MovieDO.pdb
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\obj\Debug\net5.0\MovieDO.csprojAssemblyReference.cache
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\obj\Debug\net5.0\MovieDO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\obj\Debug\net5.0\MovieDO.AssemblyInfoInputs.cache
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\obj\Debug\net5.0\MovieDO.AssemblyInfo.cs
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\obj\Debug\net5.0\MovieDO.csproj.CoreCompileInputs.cache
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\obj\Debug\net5.0\MovieDO.dll
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\obj\Debug\net5.0\ref\MovieDO.dll
+C:\Sushil\Projects\Workspace\WebApps\MovieWorld\MovieDO\obj\Debug\net5.0\MovieDO.pdb

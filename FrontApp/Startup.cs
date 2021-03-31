@@ -1,3 +1,6 @@
+using FrontApp.Business;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -14,20 +17,26 @@ namespace FrontApp
         {
             Configuration = configuration;
         }
-
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+           
             services.AddControllersWithViews();
-
+            services.AddScoped<IMovieCollection, MovieCollection>();
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/build";
             });
+            services.AddAuthorization(options => options.AddPolicy("Bearer",
+                policy => policy.Requirements.Add(new BearerRequirement())
+                )
+            );
+            services.AddSingleton<IAuthorizationHandler, BearerAuthorizationHandler>();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -562,6 +562,16 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
+      },
+      "MovieDO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/MovieDO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieDO.dll": {}
+        }
       }
     }
   },
@@ -1567,6 +1577,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MovieDO/1.0.0": {
+      "type": "project",
+      "path": "../MovieDO/MovieDO.csproj",
+      "msbuildProject": "../MovieDO/MovieDO.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1574,7 +1589,8 @@
       "AutoMapper >= 10.1.1",
       "Grpc.AspNetCore >= 2.36.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.4",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.4"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.4",
+      "MovieDO >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1607,7 +1623,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\MovieDO\\MovieDO.csproj": {
+              "projectPath": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\MovieDO\\MovieDO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

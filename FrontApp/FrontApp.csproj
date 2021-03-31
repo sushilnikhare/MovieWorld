@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.32.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.4" />
   </ItemGroup>
 
@@ -22,9 +23,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="..\CinemaWorldGrpcService\Movies.proto" GrpcServices="Client">
-      <Link>Protos\Movies.proto</Link>
-    </Protobuf>
+    <None Remove="Movies.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Movies.proto" GrpcServices="Client" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

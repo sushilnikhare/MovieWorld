@@ -1600,11 +1600,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\CinemaWorldGrpcService\\CinemaWorld.csproj",
+      "projectUniqueName": "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\CinemaWorldGrpcService\\CinemaWorld.csproj",
       "projectName": "CinemaWorld",
-      "projectPath": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\CinemaWorldGrpcService\\CinemaWorld.csproj",
+      "projectPath": "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\CinemaWorldGrpcService\\CinemaWorld.csproj",
       "packagesPath": "C:\\Users\\sushi\\.nuget\\packages\\",
-      "outputPath": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\CinemaWorldGrpcService\\obj\\",
+      "outputPath": "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\CinemaWorldGrpcService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1624,8 +1624,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\MovieDO\\MovieDO.csproj": {
-              "projectPath": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\MovieDO\\MovieDO.csproj"
+            "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\MovieDO\\MovieDO.csproj": {
+              "projectPath": "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\MovieDO\\MovieDO.csproj"
             }
           }
         }

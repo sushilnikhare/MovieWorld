@@ -1,21 +1,31 @@
-import React from "react";
-import PopulateMovieData from "./PopulateMovieData"
-const Movies = () => {
-    const [moviesList, source ,loading] = PopulateMovieData();
+import React, { useState } from "react";
+import PopulateMovieData from "./PopulateMovieData";
+import MovieRow from "./MovieRow";
+import "./Movies.css";
 
-    return (
-        <div>
-            <h6 id="tabelLabel" >Movie List from {source}</h6>
-            {loading === "true" ? (
-                <h1>Loading...</h1>
-            ) : loading === "null" ? (
-                <h1>No Movie Found</h1>
-            ) : (
-                        moviesList.map(item => {
-                            return (<li> {item.title}, ${item.price} </li>);
-                        })
-                    )}
-        </div>
-    );
-}
+const Movies = () => {
+  const [List, source, loading] = PopulateMovieData();
+
+  return (
+    <div class="container">
+      <h4>Movie List</h4>
+      <ul class="table">
+        <li class="table-header">
+          <div class="col col-1">Name</div>
+          <div class="col col-2">Source</div>
+          <div class="col col-3">Price</div>
+        </li>
+        {loading === "true" ? (
+          <p>Loading...</p>
+        ) : loading === "null" ? (
+          <p>No Movie Found</p>
+        ) : (
+          List.map((item) =>
+            item.map((movie) => <MovieRow movie={movie} source={source} />)
+          )
+        )}
+      </ul>
+    </div>
+  );
+};
 export default Movies;

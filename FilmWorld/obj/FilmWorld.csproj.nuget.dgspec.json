@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\FilmWorld\\FilmWorld.csproj": {}
+    "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\FilmWorld\\FilmWorld.csproj": {}
   },
   "projects": {
-    "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\FilmWorld\\FilmWorld.csproj": {
+    "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\FilmWorld\\FilmWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\FilmWorld\\FilmWorld.csproj",
+        "projectUniqueName": "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\FilmWorld\\FilmWorld.csproj",
         "projectName": "FilmWorld",
-        "projectPath": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\FilmWorld\\FilmWorld.csproj",
+        "projectPath": "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\FilmWorld\\FilmWorld.csproj",
         "packagesPath": "C:\\Users\\sushi\\.nuget\\packages\\",
-        "outputPath": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\FilmWorld\\obj\\",
+        "outputPath": "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\FilmWorld\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\MovieDO\\MovieDO.csproj": {
-                "projectPath": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\MovieDO\\MovieDO.csproj"
+              "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\MovieDO\\MovieDO.csproj": {
+                "projectPath": "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\MovieDO\\MovieDO.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\MovieDO\\MovieDO.csproj": {
+    "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\MovieDO\\MovieDO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\MovieDO\\MovieDO.csproj",
+        "projectUniqueName": "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\MovieDO\\MovieDO.csproj",
         "projectName": "MovieDO",
-        "projectPath": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\MovieDO\\MovieDO.csproj",
+        "projectPath": "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\MovieDO\\MovieDO.csproj",
         "packagesPath": "C:\\Users\\sushi\\.nuget\\packages\\",
-        "outputPath": "C:\\Sushil\\Projects\\Workspace\\WebApps\\MovieWorld\\MovieDO\\obj\\",
+        "outputPath": "C:\\Sushil\\Projects\\Workspace\\MovieWorld\\MovieDO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

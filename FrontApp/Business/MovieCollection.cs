@@ -31,12 +31,10 @@ namespace FrontApp.Business
             if (_Channel != null)
             {
                 var client = new Movies.MoviesClient(_Channel);
-                var reply = client.GetByMovieId(new GetByMovieIdRequest());
+                var reply = client.GetByMovieId(new GetByMovieIdRequest { MovieId = id });
                 movie = reply.Movie;
             }
             return movie;
         }
-
-    }
-    
+    }    
 }

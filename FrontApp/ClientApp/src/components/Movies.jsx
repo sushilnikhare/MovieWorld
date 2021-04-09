@@ -4,7 +4,7 @@ import MovieRow from "./MovieRow";
 import "./Movies.css";
 
 const Movies = () => {
-  const [List, source, loading] = PopulateMovieData();
+  const [List, loading] = PopulateMovieData();
 
   return (
     <div class="container">
@@ -15,14 +15,12 @@ const Movies = () => {
           <div class="col col-2">Source</div>
           <div class="col col-3">Price</div>
         </li>
-        {loading === "true" ? (
+        {loading === true ? (
           <p>Loading...</p>
-        ) : loading === "null" ? (
+        ) : loading === null ? (
           <p>No Movie Found</p>
         ) : (
-          List.map((item) =>
-            item.map((movie) => <MovieRow movie={movie} source={source} />)
-          )
+          List.map((item) => item.map((movie) => <MovieRow movie={movie} />))
         )}
       </ul>
     </div>

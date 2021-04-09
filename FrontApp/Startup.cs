@@ -64,6 +64,9 @@ namespace FrontApp
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "api", 
+                    pattern: "{controller}/{action}/{id?}");
             });
 
             app.UseSpa(spa =>

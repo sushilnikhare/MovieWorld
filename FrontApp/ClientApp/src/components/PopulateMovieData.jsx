@@ -2,7 +2,6 @@
 const PopulateMovieData = () => {
   const [loading, setLoading] = useState("false");
   const [moviesList, setMoviesList] = useState([]);
-  const [source, setSource] = useState("unknown");
   useEffect(() => {
     async function getMovieList() {
       const token = await getAccessToken();
@@ -12,15 +11,14 @@ const PopulateMovieData = () => {
         const response = await fetch("Movies", {
           headers: { Authorization: bearer },
         });
-          const data = await response.json();
+        const data = await response.json();
 
+        data.forEach(loopThroughInputList);
         setMoviesList(
           data.map((item) => {
-              setSource(item.source);
-             // item.movieList.map((movie) => movie.push({ 'source': item.source }))
             return item.movieList;
           })
-          );
+        );
         setLoading(false);
       } catch (error) {
         setLoading(null);
@@ -28,9 +26,17 @@ const PopulateMovieData = () => {
     }
     getMovieList();
   }, []);
-  return [moviesList, source, loading];
+  return [moviesList, loading];
 };
-function getAccessToken() {
+
+export function getAccessToken() {
   return "sjd1HfkjU83ksdsm3802k";
+}
+
+function loopThroughInputList(item, index, arr) {
+  for (let index = 0; index < item.movieList.length; ++index) {
+    item.movieList[index].source = item.source;
+  }
+  console.log(arr);
 }
 export default PopulateMovieData;

@@ -50,7 +50,7 @@ namespace FrontApp.Controllers
             //String[] arr1 = bearerToken.Keys;
             //if(validateTokenSuccess(this.Request))
         }
-        [HttpPost]
+        [HttpGet("{byId}")]
         public Movie Get(int id, string source)
         {
             switch (source)
